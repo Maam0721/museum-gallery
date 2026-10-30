@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="mn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#12110f" />
+    <meta name="description" content="Монгол орны сүрлэг байгаль, нүүдэлчин өв, түүхээр аялах 3D туршлага." />
+    <title>Хөх тэнгэрийн өв — Монгол орны сүр жавхлан</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://upload.wikimedia.org" crossorigin />
+  </head>
+  <body>
+    <div id="loading" class="loading-screen" role="status" aria-live="polite">
+      <div class="loading-mark" aria-hidden="true"><span></span><span></span><span></span></div>
+      <p class="loading-kicker">ХӨХ ТЭНГЭРИЙН ӨВ</p>
+      <p id="loading-message" class="loading-message">Монгол нутгаар аялахад бэлдэж байна</p>
+      <div class="loading-track"><span id="loading-progress"></span></div>
+      <span id="loading-percent" class="loading-percent">0%</span>
+    </div>
+
+    <main id="journey" class="journey" aria-label="Монгол орны байгаль, түүх, өв соёлоор аялах">
+      <canvas id="gallery-canvas" aria-hidden="true"></canvas>
+      <div class="canvas-scrim" aria-hidden="true"></div>
+      <div class="grain" aria-hidden="true"></div>
+      <header class="journey-header" aria-label="Монгол нутгийн аялал">
+        <a class="journey-brand" href="#chapter-khan" data-scroll-to="chapter-khan" data-chapter-index="0">
+          <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span>ХӨХ ТЭНГЭР<small>МОНГОЛ НУТГИЙН ӨВ</small></span>
+        </a>
+        <span class="journey-edition">БАЙГАЛЬ <i></i> ТҮҮХ <i></i> ӨВ СОЁЛ</span>
+      </header>
+
+      <section class="chapter chapter--hero" id="chapter-khan" data-chapter="0" aria-labelledby="title-khan">
+        <div class="chapter-copy chapter-copy--hero is-active">
+          <p class="chapter-index"><span>01</span> &nbsp; / &nbsp; ИХ ТАЛЫН ТҮҮХ</p>
+          <h1 id="title-khan">Хөх тэнгэрийн<br />дор <em>Монгол</em></h1>
+          <p class="chapter-caption">Чингис хаан · Их Монгол Улсыг үндэслэгч</p>
+          <p class="chapter-description">Хөх тэнгэрийн дор нүүдэлчдийн түүх нэгэн цагт дэлхийн газрын зургийг өөрчилсөн юм.</p>
+          <blockquote class="inspiration">
+            <span>ӨВӨГ ДЭЭДСЭЭС ӨВЛӨСӨН УРАМ</span>
+            <p>«Уудам талын зориг өвлөгдөж, урагшлах зам үе бүрд шинээр эхэлнэ.»</p>
+          </blockquote>
+          <p class="quote-note">Зохиогчийн уран дүрслэл · түүхэн эшлэл биш</p>
+        </div>
+        <div class="scroll-cue"><span></span> МОНГОЛ НУТГААР АЯЛАХЫН ТУЛД ГҮЙЛГЭНЭ ҮҮ</div>
+        <p class="image-credit">ЮАНЬ ҮЕИЙН ЧИНГИС ХААНЫ ХӨРӨГ · <a href="https://commons.wikimedia.org/wiki/File:YuanEmperorAlbumGenghisPortrait.jpg" target="_blank" rel="noreferrer">WIKIMEDIA COMMONS · PUBLIC DOMAIN</a></p>
+      </section>
+
+      <section class="chapter chapter--land" id="chapter-land" data-chapter="1" aria-labelledby="title-land">
+        <div class="chapter-copy">
+          <p class="chapter-index"><span>02</span> &nbsp; / &nbsp; ХАНГАЙН НОГООН НУРУУ</p>
+          <h2 id="title-land">Уудам нутгийн<br /><em>амьсгал</em></h2>
+          <p class="chapter-caption">Горхи-Тэрэлжийн байгалийн цогцолборт газар</p>
+          <p class="chapter-description">Хангайн ногоон нуруунаас говийн алтан хаяа хүртэл — нэг эх орны уудам амьсгал.</p>
+          <blockquote class="inspiration">
+            <span>ЭХ НУТАГТАА</span>
+            <p>«Эх нутаг — бидний үндэс, ирээдүй рүү тэмүүлэх хүч.»</p>
+          </blockquote>
+          <p class="quote-note">Зохиогчийн уран дүрслэл · түүхэн эшлэл биш</p>
+        </div>
+        <p class="image-credit">ТЭРЭЛЖИЙН БАЙГАЛЬ · LENNART M · <a href="https://commons.wikimedia.org/wiki/File:Mongolia-terelj.jpg" target="_blank" rel="noreferrer">CC BY-SA 4.0</a></p>
+      </section>
+
+      <section class="chapter chapter--horses" id="chapter-horses" data-chapter="2" aria-labelledby="title-horses">
+        <div class="chapter-copy">
+          <p class="chapter-index"><span>03</span> &nbsp; / &nbsp; ХИЙМОРЬ СЭРГЭЭХ ТАЛ</p>
+          <h2 id="title-horses">Салхитай уралдах<br /><em>хүлэг</em></h2>
+          <p class="chapter-caption">Хустайн нуруу · тахь нутагшсан нутаг</p>
+          <p class="chapter-description">Талын салхинд давхих сүрэг хүлэг — эрх чөлөө, тэсвэр хатуужлын амьд билэг.</p>
+          <blockquote class="inspiration">
+            <span>ӨӨРИЙН ХИЙМОРЬТОЙ</span>
+            <p>«Салхийг сөрсөн хүлэг шиг, зорьсноосоо бүү няц.»</p>
+          </blockquote>
+          <p class="quote-note">Зохиогчийн уран дүрслэл · түүхэн эшлэл биш</p>
+        </div>
+        <p class="image-credit">ХУСТАЙН НУРУУНЫ ТАХИЙН СҮРЭГ · A. OMER KARAMOLLAOGLU · <a href="https://commons.wikimedia.org/wiki/File:Herd_of_Mongolian_Wild_Horse_(8367788369).jpg" target="_blank" rel="noreferrer">CC BY 2.0</a></p>
+      </section>
+
+      <section class="chapter chapter--empire" id="chapter-empire" data-chapter="3" aria-labelledby="title-empire">
+        <div class="chapter-copy">
+          <p class="chapter-index"><span>04</span> &nbsp; / &nbsp; ТҮҮХЭН ӨВ</p>
+          <h2 id="title-empire">Тал нутгаас<br /><em>ертөнцөд</em></h2>
+          <p class="chapter-caption">Монголын эзэнт гүрэн · XIII зуун</p>
+          <p class="chapter-description">Энэ газрын зурагт 1227 онд Чингис хаан таалал төгсөх үеийн эзэнт гүрний нутаг дэвсгэрийг үзүүлжээ.</p>
+          <blockquote class="inspiration">
+            <span>ЭВ НЭГДЛИЙН ХҮЧ</span>
+            <p>«Эвтэй зорьсон зам алсыг ойртуулна.»</p>
+          </blockquote>
+          <p class="quote-note">Зохиогчийн уран дүрслэл · түүхэн эшлэл биш</p>
+        </div>
+        <p class="image-credit image-credit--empire">ЧИНГИС ХААНЫ НАС БАРСАН ҮЕИЙН ЭЗЭНТ ГҮРНИЙ ЗУРАГ · <a href="https://commons.wikimedia.org/wiki/File:Genghis_khan_empire_at_his_death.png" target="_blank" rel="noreferrer">WIKIMEDIA COMMONS · PUBLIC DOMAIN</a></p>
+      </section>
+
+      <section class="chapter chapter--gobi" id="chapter-gobi" data-chapter="4" aria-labelledby="title-gobi">
+        <div class="chapter-copy">
+          <p class="chapter-index"><span>05</span> &nbsp; / &nbsp; ГОВИЙН АЛТАН ХАЯА</p>
+          <h2 id="title-gobi">Алтан говийн<br /><em>чимээ</em></h2>
+          <p class="chapter-caption">Дорноговийн хязгаар · Говийн их тал</p>
+          <p class="chapter-description">Алсын зэрэглээ, нам гүм говь, хязгааргүй тэнгэр — Монгол орны олон төрх нэгэн эх нутагт багтана.</p>
+          <blockquote class="inspiration">
+            <span>АЛСЫН БАРААНД</span>
+            <p>«Тэсвэрийн цаана шинэ өглөө манддаг.»</p>
+          </blockquote>
+          <p class="quote-note">Зохиогчийн уран дүрслэл · түүхэн эшлэл биш</p>
+        </div>
+        <p class="image-credit">ДОРНОГОВИЙН ГОВЬ · MARCIN KONSEK · <a href="https://commons.wikimedia.org/wiki/File:Gobi,_krajobraz_pustyni_(09).jpg" target="_blank" rel="noreferrer">CC BY-SA 4.0</a></p>
+      </section>
+
+      <section class="chapter chapter--gallery" id="chapter-gallery" data-chapter="5" aria-labelledby="title-gallery">
+        <div class="chapter-copy">
+          <p class="chapter-index"><span>06</span> &nbsp; / &nbsp; МОНГОЛ ӨВӨӨРӨӨ БАХАРХ</p>
+          <h2 id="title-gallery">Тал шигээ уудам.<br /><em>Сэтгэл шигээ бат.</em></h2>
+          <p class="chapter-description">Өвгөдийн өв түүхэнд үлджээ. Монгол орны ирээдүйг бүтээх ээлж өнөөдрийн бидэнд ирлээ.</p>
+          <blockquote class="inspiration inspiration--closing">
+            <span>МОНГОЛ ХҮНДЭЭ</span>
+            <p>«Монгол гэдэг нэрийг мэдлэг, хөдөлмөрөөрөө гэрэлтүүл.»</p>
+          </blockquote>
+          <p class="quote-note">Зохиогчийн уран дүрслэл · түүхэн эшлэл биш</p>
+          <span class="gallery-note">ӨВӨӨ САНА · ЭХ ОРНОО ХАЙРЛА · ИРЭЭДҮЙГЭЭ БҮТЭЭ</span>
+        </div>
+        <p class="image-credit image-credit--gallery">ТҮҮХЭН ХӨРӨГ, МОНГОЛ НУТГИЙН ЗУРАГ · WIKIMEDIA COMMONS</p>
+      </section>
+
+      <nav class="gallery-nav" aria-label="Аяллын хэсэг сонгох">
+        <span class="nav-progress"><span id="nav-progress-fill"></span></span>
+        <div class="nav-labels">
+          <button type="button" data-scroll-to="chapter-khan" data-chapter-index="0" aria-label="Чингис хааны хэсэг рүү очих">01</button>
+          <button type="button" data-scroll-to="chapter-land" data-chapter-index="1" aria-label="Монгол нутгийн хэсэг рүү очих">02</button>
+          <button type="button" data-scroll-to="chapter-horses" data-chapter-index="2" aria-label="Монгол хүлгийн хэсэг рүү очих">03</button>
+          <button type="button" data-scroll-to="chapter-empire" data-chapter-index="3" aria-label="Монголын эзэнт гүрний хэсэг рүү очих">04</button>
+          <button type="button" data-scroll-to="chapter-gobi" data-chapter-index="4" aria-label="Говийн хэсэг рүү очих">05</button>
+          <button type="button" data-scroll-to="chapter-gallery" data-chapter-index="5" aria-label="Төгсгөлийн хэсэг рүү очих">06</button>
+        </div>
+      </nav>
+      <div class="chapter-counter" aria-hidden="true"><span id="counter-current">01</span><i></i>06</div>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
